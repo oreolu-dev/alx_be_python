@@ -7,7 +7,7 @@ match priority:
         message = f"Reminder: '{task}' is a {priority} priority task"
 
     case "low":
-        message = f"Reminder: '{task}' is a {priority} priority task."
+        message = f"Note: '{task}' is a {priority} priority task."
 
     case "medium":
         message = f"Reminder: '{task}' is a {priority} priority task."
