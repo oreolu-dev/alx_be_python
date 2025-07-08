@@ -6,8 +6,8 @@ def safe_divide(numerator, denominator):
 
 # Handle ValueError during input
 try:
-    numerator = int(input("Enter the numerator: "))
-    denominator = int(input("Enter the denominator: "))
+    numerator = float(input("Enter the numerator: "))
+    denominator = float(input("Enter the denominator: "))
     result = safe_divide(numerator, denominator)
     print(result)
 except ValueError:
