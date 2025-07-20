@@ -15,14 +15,14 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice (1 - 4): ")
+        choice = int(input("Enter your choice (1 - 4): "))
 
-        if choice == '1':
+        if choice == 1:
             item = input("Enter the item you want to add: ")
             shopping_list.append(item)
             print(f"Successfully added '{item}'.")
 
-        elif choice == '2':
+        elif choice == 2:
             item = input("Enter the item you want to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
@@ -30,7 +30,7 @@ def main():
             else:
                 print(f"{item} not found in the shopping list.")
 
-        elif choice == '3':
+        elif choice == 3:
             if shopping_list:
                 print("Shopping List: ")
                 for i in range(len(shopping_list)):
@@ -38,7 +38,7 @@ def main():
             else:
                 print("Your shopping list is empty.")
 
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
 
