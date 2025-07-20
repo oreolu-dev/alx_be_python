@@ -6,16 +6,18 @@ def display_menu():
     print("4. Exit")
 
 
-
-from shopping_list_manager import display_menu
-
 def main():
     shopping_list = []
 
 
     while True:
         display_menu()
-        choice = int(input("Enter your choice (1 - 4): "))
+
+        try:
+            choice = int(input("Enter your choice (1 - 4): "))
+        except ValueError:
+            print("Invalid input. Please enter a number from 1 to 4.")
+            continue
 
         if choice == 1:
             item = input("Enter the item you want to add: ")
