@@ -14,18 +14,18 @@ def main():
         display_menu()
 
         try:
-            choice = int(input("Enter the item to add (1 - 4): "))
+            choice = int(input("Enter your choice: "))
         except ValueError:
             print("Invalid input. Please enter a number from 1 to 4.")
             continue
 
         if choice == 1:
-            item = input("Enter the item you want to add: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(f"Successfully added '{item}'.")
 
         elif choice == 2:
-            item = input("Enter the item you want to remove: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"Successfully removed '{item}'.")
