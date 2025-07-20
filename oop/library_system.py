@@ -21,12 +21,12 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, Pages: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 class Library:
     # creating books (a list to store instances of Book, EBook, and PrintBook).
-    def __init__(self,):
+    def __init__(self):
         self.books = []
 
     #  based on the Library class (self.books); add_book(self, book) adds a Book, EBook, or PrintBook instance to the library.
@@ -38,4 +38,3 @@ class Library:
         for book in self.books:
             print(book)
 
-            
