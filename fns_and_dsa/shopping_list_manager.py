@@ -1,5 +1,5 @@
 def display_menu():
-    print("Shopping List Manager")
+    print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -14,7 +14,7 @@ def main():
         display_menu()
 
         try:
-            choice = int(input("Enter your choice (1 - 4): "))
+            choice = int(input("Enter the item to add (1 - 4): "))
         except ValueError:
             print("Invalid input. Please enter a number from 1 to 4.")
             continue
